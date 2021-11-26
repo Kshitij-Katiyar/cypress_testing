@@ -11,13 +11,16 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
-    "web-vitals": "^1.1.2"
+    "web-vitals": "^1.1.2",
+    "xvfb": "^0.4.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "cypress run",
-    "eject": "react-scripts eject" 
+    "test": "cypress run --record",
+    "eject": "react-scripts eject" ,
+    "cy:version":"cypress version" ,
+    "start:ci": "serve --no-clipboard --listen ${PORT:-8080}"
   },
   "eslintConfig": {
     "extends": [
